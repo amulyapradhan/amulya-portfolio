@@ -227,7 +227,7 @@ export default function Portfolio() {
             <h2 className={`text-4xl font-bold mb-6 ${isDarkMode ? "text-white" : "text-slate-800"}`}>About Me</h2>
             <div className="max-w-3xl mx-auto">
               <p className={`text-lg mb-6 leading-relaxed ${isDarkMode ? "text-slate-300" : "text-slate-600"}`}>
-                I'm a dedicated Java Developer with over 3 years of professional experience at Indo Sakura Software,
+                I'm a dedicated Java Developer with over 3 plus years of professional experience at Indo Sakura Software,
                 where I've specialized in developing scalable, efficient, and maintainable software solutions using Java
                 and related frameworks. My expertise spans both backend development and frontend technologies.
               </p>
@@ -335,7 +335,7 @@ export default function Portfolio() {
             className="text-center mb-16"
           >
             <h2 className={`text-4xl font-bold mb-6 ${isDarkMode ? "text-white" : "text-slate-800"}`}>
-              Featured Projects
+              Projects
             </h2>
             <p className={`text-lg max-w-2xl mx-auto ${isDarkMode ? "text-slate-300" : "text-slate-600"}`}>
               Here are some of my recent projects that demonstrate enterprise-level problem-solving and full-stack
@@ -620,7 +620,7 @@ export default function Portfolio() {
         className={`py-8 px-4 sm:px-6 lg:px-8 ${isDarkMode ? "bg-slate-800 text-white" : "bg-slate-800 text-white"}`}
       >
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-slate-400">© 2024 Amulya Pradhan. Built with Next.js and Tailwind CSS.</p>
+          <p className="text-slate-400">© 2023 Amulya Pradhan. Built with Next.js and Tailwind CSS.</p>
         </div>
       </footer>
 
