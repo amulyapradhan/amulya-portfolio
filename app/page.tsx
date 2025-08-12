@@ -102,7 +102,7 @@ export default function Portfolio() {
               animate={{ opacity: 1, x: 0 }}
               className={`font-bold text-xl ${isDarkMode ? "text-white" : "text-slate-800"}`}
             >
-              Amulya Pradhan
+              Amulya Pradhan Engineer
             </motion.div>
 
             {/* Desktop Navigation */}
