@@ -85,6 +85,15 @@ export default function Portfolio() {
       category: "Development Tools",
       items: ["Eclipse", "STS", "VS Code", "IntelliJ IDEA", "Postman", "Git", "GitHub", "SVN"],
     },
+    
+    {
+      category: "Devops Tools",
+      items: ["Docker", "CI/CD Jenkins"],
+    },
+    {
+      category: "Messaging services",
+      items: ["Redis", "Kafka"],
+    }
   ]
 
   return (
@@ -102,7 +111,7 @@ export default function Portfolio() {
               animate={{ opacity: 1, x: 0 }}
               className={`font-bold text-xl ${isDarkMode ? "text-white" : "text-slate-800"}`}
             >
-              Amulya Pradhan Engineer
+              Amulya Pradhan 
             </motion.div>
 
             {/* Desktop Navigation */}
