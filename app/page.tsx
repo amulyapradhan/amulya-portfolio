@@ -91,7 +91,7 @@ export default function Portfolio() {
 
   const skills = [
     {
-      category: "Core Java & Frameworks",
+      category: "Java & Frameworks",
       items: ["Java", "Spring Boot", "Spring Framework", "REST APIs", "Microservices", "Hibernate/JPA"],
     },
     {
@@ -338,7 +338,7 @@ export default function Portfolio() {
                   <div className="flex items-start gap-2">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2"></div>
                     <p className={`text-sm ${isDarkMode ? "text-slate-300" : "text-slate-600"}`}>
-                      PGDCA Course - NICT Rayagada
+                      PGDCA - NICT Rayagada
                     </p>
                   </div>
                   <div className="flex items-start gap-2">
