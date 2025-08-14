@@ -7,7 +7,24 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
-import { Github, Linkedin, Mail, ExternalLink, Menu, X, ArrowUp, Sun, Moon, Phone, MapPin, Award } from "lucide-react"
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ExternalLink,
+  Menu,
+  X,
+  ArrowUp,
+  Sun,
+  Moon,
+  Phone,
+  MapPin,
+  Award,
+  Download,
+  Eye,
+} from "lucide-react"
+import { EnhancedResumePreview } from "@/components/enhanced-resume-preview"
+import { ResumeSection } from "@/components/resume-section"
 
 export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -85,14 +102,12 @@ export default function Portfolio() {
       category: "Development Tools",
       items: ["Eclipse", "STS", "VS Code", "IntelliJ IDEA", "Postman", "Git", "GitHub", "SVN"],
     },
-    
     {
-      category: "Devops Tools",
-      items: ["Docker", "CI/CD Jenkins"],
-    },
-    {
+      category: "Devops",
+      items: ["Docker","CI/CD Jenkins"]
+    }, {
       category: "Messaging services",
-      items: ["Redis", "Kafka"],
+      items: ["Redis","Kafka"]
     }
   ]
 
@@ -111,7 +126,7 @@ export default function Portfolio() {
               animate={{ opacity: 1, x: 0 }}
               className={`font-bold text-xl ${isDarkMode ? "text-white" : "text-slate-800"}`}
             >
-              Amulya Pradhan 
+              Amulya Pradhan
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -210,6 +225,18 @@ export default function Portfolio() {
               >
                 View My Work
               </Button>
+              <EnhancedResumePreview
+                triggerButton={
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className={`px-8 py-3 ${isDarkMode ? "border-slate-600 text-slate-300 hover:bg-slate-800" : "border-slate-300 text-slate-700 hover:bg-slate-50"}`}
+                  >
+                    <Eye size={16} />
+                    Preview & Download Resume
+                  </Button>
+                }
+              />
               <Button
                 variant="outline"
                 size="lg"
@@ -344,7 +371,7 @@ export default function Portfolio() {
             className="text-center mb-16"
           >
             <h2 className={`text-4xl font-bold mb-6 ${isDarkMode ? "text-white" : "text-slate-800"}`}>
-              Projects
+              Featured Projects
             </h2>
             <p className={`text-lg max-w-2xl mx-auto ${isDarkMode ? "text-slate-300" : "text-slate-600"}`}>
               Here are some of my recent projects that demonstrate enterprise-level problem-solving and full-stack
@@ -517,6 +544,9 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Resume Section */}
+      <ResumeSection isDarkMode={isDarkMode} />
+
       {/* Contact Section */}
       <section id="contact" className={`py-20 px-4 sm:px-6 lg:px-8 ${isDarkMode ? "bg-slate-900" : "bg-slate-50"}`}>
         <div className="max-w-4xl mx-auto">
@@ -576,6 +606,18 @@ export default function Portfolio() {
                     <Linkedin size={16} />
                     LinkedIn
                   </Button>
+                  <EnhancedResumePreview
+                    triggerButton={
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className={`flex items-center gap-2 ${isDarkMode ? "border-slate-600 text-slate-300 hover:bg-slate-800" : "bg-transparent"}`}
+                      >
+                        <Download size={16} />
+                        Resume
+                      </Button>
+                    }
+                  />
                 </div>
               </div>
             </motion.div>
@@ -629,7 +671,7 @@ export default function Portfolio() {
         className={`py-8 px-4 sm:px-6 lg:px-8 ${isDarkMode ? "bg-slate-800 text-white" : "bg-slate-800 text-white"}`}
       >
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-slate-400">© 2023 Amulya Pradhan. Built with Next.js and Tailwind CSS.</p>
+          <p className="text-slate-400">© 2022 Amulya Pradhan. Built with Next.js and Tailwind CSS.</p>
         </div>
       </footer>
 
